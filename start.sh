@@ -28,6 +28,6 @@ do
         echo "the current status of disk"
         df -lh
   fi
-  echo "sleep 30 minutes for next upload"
-  sleep 1800s
+  echo "sleep 1 minutes for next upload"
+  sleep 60s
 done
