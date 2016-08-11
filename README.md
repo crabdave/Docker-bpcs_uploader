@@ -12,7 +12,7 @@ docker build -t bpcs_uploader .
 #init
 docker run -it -e "container=container-bpcs_uploader" --name container-bpcs_uploader -h container-bpcs_uploader -v /data/docker:/data/docker bpcs_uploader
 
-与容器交互对bpcs进行权限配置：
+config auth：
 Launch your favorite web browser and visit https://openapi.baidu.com/device
 Input suqj8zyf as the user code if asked.
 After granting access to the application, come back here and press Enter to continue.
