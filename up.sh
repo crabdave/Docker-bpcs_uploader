@@ -1,12 +1,8 @@
 
 
 #!/bin/sh
-
-#check files in /data/docker/upload
-
-DIRECTORY=/data/docker/upload
-if [ "`ls -A $DIRECTORY`" = "" ]; then
-	echo "$DIRECTORY is indeed empty"
-else
-	echo "$DIRECTORY is not empty"
-fi
+        datename=$(date +%Y%m%d-%H%M%S)
+        for file in `find . -type f -name "*"`;do 
+                dirname=`dirname $file`
+                /root/bpcs_uploader/bpcs_uploader.php upload $file $datename/$file
+        done
