@@ -29,5 +29,5 @@ do
         df -lh
   fi
   echo "sleep 30 minutes for next upload"
-  sleep 5s
+  sleep 1800s
 done
