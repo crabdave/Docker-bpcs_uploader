@@ -3,8 +3,7 @@
 #mkdir 
 mkdir -p /data/docker/
 
-#add dir to White List 
-reboot if any exception happens
+#add dir to White List. reboot if any exception happens
 chcon -Rt svirt_sandbox_file_t /data/docker/
 
 
