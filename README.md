@@ -32,7 +32,7 @@ docker start container-bpcs_uploader
 touch /data/docker/upload/test.txt
 
 #check the logs of the container
-docker logs --tail 0 -f container-bpcs_uploader
+docker logs --tail 100 -f container-bpcs_uploader
 
 #end
 Enjoy it!
