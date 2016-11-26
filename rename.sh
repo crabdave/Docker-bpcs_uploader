@@ -16,7 +16,7 @@ dirname=`dirname $file`
  P="${file##*.}"
 echo $file $dirname/$i.$P;
 
-echo $dirname >> names.txt
+echo ${file}" to "${i}"."${P} >> names.txt
 
 mv $file $dirname/$i.$P;
 done
