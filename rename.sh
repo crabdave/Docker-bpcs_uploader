@@ -8,12 +8,15 @@ while read name;do
         mv "$name" $na
 done
 
+
 for file in `find . -type f -name "*"`;do 
 dirname=`dirname $file`
 #newfile=`echo $file | sed 's,\/,_,g'|sed 's,\._,,g'`
  i=`expr $i + 1000`;
  P="${file##*.}"
 echo $file $dirname/$i.$P;
+
+echo $dirname >> names.txt
 
 mv $file $dirname/$i.$P;
 done
